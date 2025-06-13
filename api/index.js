@@ -6,9 +6,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/getuser/:id",(req,res)=>{
-const id = req.params.id;
-res.json({id});
+app.get("/",(req,res)=>{
+res.json({msg:"Hello there"})
 });
 
 app.post("/postdata",(req,res)=>{
